@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Library.DataAccess.Data.Repository.IRepository
 {
-    interface IUnitOfWork
+    interface IUnitOfWork : IDisposable
     {
+        IBookRepository Book { get; }
+        void Save();
     }
 }
