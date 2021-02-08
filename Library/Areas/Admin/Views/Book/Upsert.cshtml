@@ -44,11 +44,11 @@
                 <div class="col-8">
                     @if (Model.Id != 0)
                     {
-                        <input asp-for="PublishedDate" type="date" class="form-control" /> @*value="dd.mm.rrrr"*@
+                        <input asp-for="PublishedDate" type="date" class="form-control" /> 
                     }
                     else
                     {
-                        <input asp-for="PublishedDate" value="dd.mm.rrrr" type="date" class="form-control" /> @*value="dd.mm.rrrr"*@
+                        <input asp-for="PublishedDate" value="dd.mm.rrrr" type="date" class="form-control" /> 
                     }
                     <span asp-validation-for="PublishedDate" class="text-danger"></span>
                 </div>

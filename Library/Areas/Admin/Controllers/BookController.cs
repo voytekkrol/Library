@@ -45,6 +45,7 @@ namespace Library.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Upsert(Book book)
         {
+            
             if (ModelState.IsValid)
             {
                 if (book.Id == 0)
