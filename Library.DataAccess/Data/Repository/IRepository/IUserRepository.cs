@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library.DataAccess.Data.Repository.IRepository
 {
-    interface IUserRepository : IRepository<ApplicationUser>
+    public interface IUserRepository : IRepository<ApplicationUser>
     {
         void LockUser(string userId);
 

@@ -13,10 +13,11 @@ namespace Library.DataAccess.Data.Repository
         {
             _db = db;
             Book = new BookRepository(_db);
-
+            User = new UserRepository(_db);
         }
 
         public IBookRepository Book { get; private set; }
+        public IUserRepository User { get; private set; }
 
         public void Dispose()
         {
