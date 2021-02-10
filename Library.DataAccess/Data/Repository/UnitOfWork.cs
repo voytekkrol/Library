@@ -14,10 +14,12 @@ namespace Library.DataAccess.Data.Repository
             _db = db;
             Book = new BookRepository(_db);
             User = new UserRepository(_db);
+            Reservation = new ReservationRepository(_db);
         }
 
         public IBookRepository Book { get; private set; }
         public IUserRepository User { get; private set; }
+        public IReservationRepository Reservation { get; private set; }
 
         public void Dispose()
         {
